@@ -1,0 +1,23 @@
+programa
+{
+//Escreva um pseudocódigo em Portugol que recebe uma nota de um aluno e
+//imprime se ele foi aprovado, reprovado ou se está de recuperação,
+//considerando que a nota mínima para aprovação é 7, a nota mínima para
+//recuperação é 5 e qualquer nota abaixo disso é reprovado.
+
+	funcao inicio()
+	{
+		real nota
+		escreva("Digite a nota do aluno: ")
+   leia(nota)
+
+   se (nota >= 7)
+      escreva("Aluno aprovado.")
+   senao
+   
+    se (nota >= 5)
+         escreva("Aluno em recuperação.")
+      senao
+         escreva("Aluno reprovado.")
+	}
+}

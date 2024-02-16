@@ -1,0 +1,23 @@
+programa {
+//Escreva um pseudocódigo em Portugol que imprima os primeiros 10 números
+//da sequência de Fibonacci. A sequência de Fibonacci é uma sequência de
+//números inteiros, começando normalmente por 0 e 1, na qual, cada termo
+//subsequente corresponde à soma dos dois anteriores.
+
+  funcao inicio() {
+    inteiro termo1=0, termo2=1, quantidadeDeNumeros=10
+    inteiro proximoTermo
+
+    escreva("A sequência Fibonacci com ",quantidadeDeNumeros," termos. \n")
+    
+    escreva(termo1," ",termo2)
+
+    para(inteiro i=2; i<=quantidadeDeNumeros; i++){
+      proximoTermo=termo1+termo2
+      escreva(proximoTermo, " ")
+
+      termo1=termo2
+      termo2=proximoTermo
+    }
+  }
+}
